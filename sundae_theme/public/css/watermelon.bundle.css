@@ -1,9 +1,52 @@
 /* Global */
 :root{
-    --main-color: #691551;
-    --second-color: #af3d8f;
-    --third-color: #a5488a;
-    --widget-bg: #e8eafcad ;
+    --main-color: #1e6e99;
+    --second-color: #83b0c5;
+    --third-color: #83b0c5;
+    --widget-bg: #e8eafcad;
+    --icon-fill: #ffffff;
+}
+/*Adding Background Color t0 Sidebar*/
+@media (min-width: 992px) {
+    [data-page-route=Workspaces] .layout-main .layout-side-section {
+        padding-right: 15px;
+        background-color: var(--main-color);
+    }
+}
+
+[data-page-route=Workspaces] .layout-main .layout-side-section {
+    padding-right: 15px;
+    background-color: var(--main-color);
+}
+
+
+/*Making the container 100vw*/
+@media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 100vw !important;
+    }
+}
+
+/*Adding Background Color to the mobile side bar*/
+@media (max-width: 991px) {
+    .layout-side-section .overlay-sidebar {
+        background: var(--main-color) !important;
+    }
+}
+
+
+/*Changing Link Color For SideMenu*/
+.desk-sidebar .standard-sidebar-item > a{
+    color: var(--neutral-white) !important;
+    text-decoration: none !important;
+}
+
+.nav.navbar-nav span{
+    color: white !important;
+}
+
+.icon, .es-icon{
+    fill: var(--neutral-white)!important;
 }
 [data-theme=watermelon]{
     --primary: var(--main-color);
